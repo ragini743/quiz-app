@@ -15,10 +15,10 @@ const quizData=[
 
     },
     {
-        Question : 'the most important cell type associated with the immunity of the body is -',
-       a : 'platelets',
-       b :' lymphocytes',
-       c : 'RBCs',
+        Question : 'The water reaches great heights in trees because of suction pull caused by -',
+       a : 'absorption',
+       b :' traanspiration',
+       c : 'evaporation',
        d : 'None of the above',
         
 },
@@ -73,16 +73,10 @@ let button=document.querySelector("button")
 button.addEventListener('click', (event) => {
     currentIndex++;
     updateQuestionAndAnswer(currentIndex)
+    if(currentIndex==4){
+        alert("you completed the quiz")}
 });
 
-// console.log(h1)
-// let quizContainer=document.querySelector(".quizConntainer")
-// console.log(quizContainer)
 
-// for(let container of quizData){
-//     console.log(container)
-//     h1.innerHTML=container.Question
-//     console.log(container.Question)
+let answer=document.querySelectorAll(".answer")
 
-    
-// }
